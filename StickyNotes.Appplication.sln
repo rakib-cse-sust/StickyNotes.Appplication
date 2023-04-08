@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B665573E-A489-4D5B-A27B-B685F17CF068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StickyNotes", "StickyNotes", "{3D1C31DC-C699-49C0-AEEE-11ABBC2DC987}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StickyNotes.User", "StickyNotes.User", "{00BC8A0B-8987-445C-A6F7-37D8D106E885}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{63D6C7A4-B621-42F5-B845-3635FED9776A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7458FC32-68B4-4964-A6CF-C2A67B99B2AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastucture", "{726CF0BB-C1D1-48E0-B275-E69CC8853801}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StickyNotes.Domain", "StickyNotes.Domain\StickyNotes.Domain.csproj", "{028B6530-7C62-4F98-82E2-05FAEB7B8E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyNotes.Application", "StickyNotes.Application\StickyNotes.Application.csproj", "{013F1FC6-889A-4C36-95CE-5C9BC3B7959D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028B6530-7C62-4F98-82E2-05FAEB7B8E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028B6530-7C62-4F98-82E2-05FAEB7B8E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028B6530-7C62-4F98-82E2-05FAEB7B8E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028B6530-7C62-4F98-82E2-05FAEB7B8E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013F1FC6-889A-4C36-95CE-5C9BC3B7959D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013F1FC6-889A-4C36-95CE-5C9BC3B7959D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013F1FC6-889A-4C36-95CE-5C9BC3B7959D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013F1FC6-889A-4C36-95CE-5C9BC3B7959D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D1C31DC-C699-49C0-AEEE-11ABBC2DC987} = {B665573E-A489-4D5B-A27B-B685F17CF068}
+		{00BC8A0B-8987-445C-A6F7-37D8D106E885} = {B665573E-A489-4D5B-A27B-B685F17CF068}
+		{63D6C7A4-B621-42F5-B845-3635FED9776A} = {3D1C31DC-C699-49C0-AEEE-11ABBC2DC987}
+		{7458FC32-68B4-4964-A6CF-C2A67B99B2AA} = {3D1C31DC-C699-49C0-AEEE-11ABBC2DC987}
+		{726CF0BB-C1D1-48E0-B275-E69CC8853801} = {3D1C31DC-C699-49C0-AEEE-11ABBC2DC987}
+		{028B6530-7C62-4F98-82E2-05FAEB7B8E7E} = {7458FC32-68B4-4964-A6CF-C2A67B99B2AA}
+		{013F1FC6-889A-4C36-95CE-5C9BC3B7959D} = {7458FC32-68B4-4964-A6CF-C2A67B99B2AA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE35D3C1-4846-4DFD-8619-8C968973E049}
+	EndGlobalSection
+EndGlobal
