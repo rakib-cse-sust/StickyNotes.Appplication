@@ -30,7 +30,7 @@ namespace StickyNotes.Application.Features.Notes.Queries.GetNoteDetail
 
             var noteDetailDto = _mapper.Map<NoteDetailVm>(@note);
 
-            var user = await _userRepository.GetByIdAsync(@note.NoteId);
+            var user = await _userRepository.GetByIdAsync(@note.UserId);
             noteDetailDto.User = _mapper.Map<UserDto>(user);
 
             return noteDetailDto;

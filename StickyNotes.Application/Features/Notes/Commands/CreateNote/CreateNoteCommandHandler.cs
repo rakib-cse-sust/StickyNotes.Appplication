@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using MediatR;
+using StickyNotes.Application.Contracts.Infrastucture;
 using StickyNotes.Application.Contracts.Persistance;
+using StickyNotes.Application.Models.Mail;
 using StickyNotes.Domain.Entities;
 
 namespace StickyNotes.Application.Features.Notes.Commands.CreateNote
@@ -9,11 +11,13 @@ namespace StickyNotes.Application.Features.Notes.Commands.CreateNote
     {
         private readonly INoteRepository _noteRepository;
         private readonly IMapper _mapper;
+        private readonly IEmailService _emailService;
 
-        public CreateNoteCommandHandler(IMapper mapper, INoteRepository noteRepository)
+        public CreateNoteCommandHandler(IMapper mapper, INoteRepository noteRepository, IEmailService emailService)
         {
             _mapper = mapper;
             _noteRepository = noteRepository;
+            _emailService = emailService;
         }
 
         public async Task<CreateNoteCommandResponse> Handle(CreateNoteCommand request, CancellationToken cancellationToken)
@@ -39,16 +43,17 @@ namespace StickyNotes.Application.Features.Notes.Commands.CreateNote
                 createNoteCommandResponse.Note = _mapper.Map<CreateNoteDto>(@note);
             }
 
+            // Need to replace with email microservice + rabbitMq
             //Sending email notification to admin address
-            //var email = new Email() { To = "gill@snowball.be", Body = $"A new event was created: {request}", Subject = "A new event was created" };
-            //try
-            //{
-            //    await _emailService.SendEmail(email);
-            //}
-            //catch (Exception ex)
-            //{
-            //    //this shouldn't stop the API from doing else so this can be logged
-            //}
+            var email = new Email() { To = "gill@snowball.be", Body = $"A new event was created: {request}", Subject = "A new event was created" };
+            try
+            {
+                await _emailService.SendEmail(email);
+            }
+            catch (Exception ex)
+            {
+                //this shouldn't stop the API from doing else so this can be logged
+            }
 
             return createNoteCommandResponse;
         }
