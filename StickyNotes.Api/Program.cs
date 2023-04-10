@@ -34,7 +34,7 @@ var app = builder
        .ConfigurePipeline();
 
 // Delete the database then run migration
-// await app.ResetDatabaseAsync();
+//await app.ResetDatabaseAsync();
 
 app.Run();
 
