@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StickyNotes.Users.Application\StickyNotes.Users.Application.csproj" />
+    <ProjectReference Include="..\StickyNotes.Users.Identity\StickyNotes.Users.Identity.csproj" />
     <ProjectReference Include="..\StickyNotes.Users.Infrastructure\StickyNotes.Users.Infrastructure.csproj" />
     <ProjectReference Include="..\StickyNotes.Users.Persistence\StickyNotes.Users.Persistence.csproj" />
   </ItemGroup>

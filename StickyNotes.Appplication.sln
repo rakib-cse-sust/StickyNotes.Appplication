@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StickyNotes.Users.Applicati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StickyNotes.Users.Persistence", "StickyNotes.Users.Persistence\StickyNotes.Users.Persistence.csproj", "{8D27A912-150B-4438-9359-D7832FE4BB80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyNotes.Users.Identity", "StickyNotes.Users.Identity\StickyNotes.Users.Identity.csproj", "{9445D38C-AAAA-429C-923F-B6F472747395}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8D27A912-150B-4438-9359-D7832FE4BB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D27A912-150B-4438-9359-D7832FE4BB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D27A912-150B-4438-9359-D7832FE4BB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9445D38C-AAAA-429C-923F-B6F472747395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9445D38C-AAAA-429C-923F-B6F472747395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9445D38C-AAAA-429C-923F-B6F472747395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9445D38C-AAAA-429C-923F-B6F472747395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{5302B45A-2CE6-4ECB-AEAF-3FBE1E42AB9D} = {2DF77855-1C51-480F-A892-529A1DF630B4}
 		{83511C0C-C38D-4EAF-9AC3-0576DCCF0418} = {2DF77855-1C51-480F-A892-529A1DF630B4}
 		{8D27A912-150B-4438-9359-D7832FE4BB80} = {04EE43CE-5B21-431F-A6E0-75C03E79D008}
+		{9445D38C-AAAA-429C-923F-B6F472747395} = {04EE43CE-5B21-431F-A6E0-75C03E79D008}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE35D3C1-4846-4DFD-8619-8C968973E049}
