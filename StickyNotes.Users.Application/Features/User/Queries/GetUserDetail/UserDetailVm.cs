@@ -1,4 +1,4 @@
-﻿namespace StickyNotes.Users.Application.Features.Notes.Queries.GetNoteDetail
+﻿namespace StickyNotes.Users.Application.Features.User.Queries.GetUserDetail
 {
     public class UserDetailVm
     {

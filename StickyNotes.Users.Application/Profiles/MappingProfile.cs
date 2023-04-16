@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using StickyNotes.Users.Application.Features.Notes.Queries.GetNoteDetail;
 using StickyNotes.Users.Application.Features.User.Commands.RegisterUser;
+using StickyNotes.Users.Application.Features.User.Queries.GetUserDetail;
 
 namespace StickyNotes.Users.Application.Profiles
 {

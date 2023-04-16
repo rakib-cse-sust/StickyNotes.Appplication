@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
-using StickyNotes.Application.Features.Notes.Queries.GetNoteDetail;
 using StickyNotes.Users.Application.Contracts.Persistance;
 using StickyNotes.Users.Application.Exceptions;
 
-namespace StickyNotes.Users.Application.Features.Notes.Queries.GetNoteDetail
+namespace StickyNotes.Users.Application.Features.User.Queries.GetUserDetail
 {
     internal class GetUserDetailQueryHandler : IRequestHandler<GetUserDetailQuery, UserDetailVm>
     {
