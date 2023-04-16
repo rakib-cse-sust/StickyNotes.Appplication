@@ -81,7 +81,7 @@ namespace StickyNotes.Users.Api
                 var context = scope.ServiceProvider.GetService<StickyNotesUsersDbContext>();
                 if (context != null)
                 {
-                    await context.Database.EnsureDeletedAsync();
+                    //await context.Database.EnsureDeletedAsync();
                     await context.Database.MigrateAsync();
                 }
             }
